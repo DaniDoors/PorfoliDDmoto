@@ -17,11 +17,14 @@ h1{
 .verd{
     color: rgb(69, 172, 108);
 }
-.cantonadasotadreta{
+#absolute {
+    width: 300px;
+    height: 100px;
+    background-color: #FFD7C2;
     position: absolute;
-    bottom: 80px;
-    right: 300px;
-}
+    bottom: 10px;
+    right: 20px;
+  }
 .center{
     text-align: center;
 }
