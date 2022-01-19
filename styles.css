@@ -28,7 +28,11 @@ h1{
 .center{
     text-align: center;
 }
-#moto {
+#dreta {
     position: absolute;
-    right: 30px;
+    right: 0px;
+}
+#esquerra{
+    position: absolute;
+    left: 0px;
 }
