@@ -29,10 +29,14 @@ h1{
     text-align: center;
 }
 #dreta {
+    width: 200px;
+    height: 100px;
     position: absolute;
     right: 0px;
 }
 #esquerra{
+    width: 100px;
+    height: 100px;
     position: absolute;
     left: 0px;
 }
