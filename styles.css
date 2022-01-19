@@ -3,7 +3,7 @@ h1{
     font: verdana;
     font-size: 96px;
 }
-p {
+* {
     background-color: blueviolet;
     
 }
