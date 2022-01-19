@@ -1,11 +1,14 @@
 h1{
     background-color: black;
-    font: verdana;
     font-size: 96px;
-    color: rgb(86, 172, 222)
+    color: rgb(86, 172, 222);
+    font-family: 'Courier New', Courier, monospace;
+    
 }
 * {
     background-color: blueviolet;
     font-weight: bold;
     color: rgb(69, 172, 108);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
