@@ -17,3 +17,8 @@ h1{
 .verd{
     color: rgb(69, 172, 108);
 }
+.cantonadasotadreta{
+    position: absolute;
+    bottom: 80px;
+    right: 500px;
+}
