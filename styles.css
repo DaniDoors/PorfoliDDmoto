@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(34, 2, 65);
+    background-color: rgb(93, 37, 153);
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
@@ -35,15 +35,154 @@ body {
     bottom: 10px;
     right: 20px;
 }
+.bigicon{
+    height: 200px;
+    width: 200px;
+}
+#contactesgran {
+    width: 850px;
+    height: 200px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
 #form{
     display: flex;
     justify-content: space-around;
     position: absolute;
     left: 5%;
-    bottom: 5%;
+    bottom: 10%;
 }
 #formulari{
     display: flex;
     flex-direction: column;
     color: darkgray;
+}
+#massapetit{
+    display: none;
+}
+#mimotogrande{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+#fondoenagas{
+    position: relative;
+    left: -50%;
+    opacity: 20%;
+}
+#logosol{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    height: 600px;
+}
+/* Pantalla 1100px*/
+@media only screen and (max-width: 1100px) {
+    body{
+        background-color: palegoldenrod;
+    }
+    #logogran{
+        height: 150px;
+
+    }
+    .centerlogo{
+        left: 10%;
+    }
+    .bigicon{
+        height: 150px;
+        width: 150px;
+    }
+    #contactesgran{
+        width: 650px;
+        height: 150px;
+        left: 5%;
+    }
+    #mimotogrande{
+        height: 400px;
+        left: 10%;
+    }
+    #logosol{
+        left: 20%;
+        height: 500px;
+    }
+}
+/* Pantalla 700px*/
+@media only screen and (max-width: 700px) {
+    body{
+        background-color: rgb(102, 104, 11);
+    }
+    #logogran{
+        height: 100px;
+    }
+    .centerlogo{
+         left: 10%;
+    }
+    .bigicon{
+        height: 100px;
+        width: 100px;
+    }
+    #contactesgran{
+        width: 450px;
+        height: 100px;
+        left: 20%;
+    }
+    #mimotogrande{
+        height: 300px;
+    }
+    #logosol{
+        height: 400px;
+    }
+}
+/* Pantalla 550px*/
+@media only screen and (max-width: 550px) {
+    body{
+        background-color: brown;
+    }
+    .titolimg{
+        height: 60px;
+    }
+    #logogran{
+        height: 70px;
+    }
+    .blau,.verd{
+        font-size: 10px;
+    }
+    .centerlogo{
+        left: 10%;
+    }
+    #formimg{
+        display: none;
+    }
+    .bigicon{
+        height: 50px;
+        width: 50px;
+    }
+    #contactesgran{
+        width: 250px;
+        height: 50px;
+        left: 15%;
+    }
+    #mimotogrande{
+        height: 200px;
+    }
+    #logosol{
+        height: 200px;
+    }
+}
+/* Pantalla minúscula*/
+@media only screen and (max-width: 300px) {
+    body{
+        background-color: red;
+        color: yellow;
+        position: absolute;
+        top: 40%;
+    }
+    .centratitol, .centerlogo, #form, #contactes, #contactesgran,
+    #mimotogrande, #logosol{
+        display: none;
+    }
+    #massapetit{
+        display: block;
+    }
 }
