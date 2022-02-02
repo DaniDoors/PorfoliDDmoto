@@ -2,7 +2,8 @@ body {
     background-color: rgb(93, 37, 153);
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    --blaudunkel: rgb(86, 172, 222);
+    --verddunkel: rgb(69, 172, 108);
 }
 .centratitol{
     display: flex;
@@ -15,10 +16,10 @@ body {
     color: silver;
 }
 .blau{
-    color: rgb(86, 172, 222);
+    color: var(--blaudunkel);
 }
-.verd{
-    color: rgb(69, 172, 108);
+.verd {
+    color: var(--verddunkel);
 }
 .centerlogo{
     display: flex;
@@ -34,6 +35,13 @@ body {
     position: absolute;
     bottom: 10px;
     right: 20px;
+}
+.logogran{
+    height: 200px;
+    transition: all 500ms ease;
+}
+.logogran:hover {
+    height: 250px;
 }
 .bigicon{
     height: 200px;
@@ -76,6 +84,50 @@ body {
     top: 20%;
     left: 30%;
     height: 600px;
+}
+@keyframes animacio {
+    from{transform: translateX(0); background-color: black; color: yellow}
+    to{transform: translateX(1600px);background-color: yellow; color: black;}
+}
+.quadret {
+    text-align: center;
+    color: black;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    animation-name: animacio;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-play-state: running;
+    transition: all 500ms ease;
+}
+.quadret:hover {
+    background-color: burlywood;
+    animation-play-state: paused;
+}
+.alarm{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    font-size: 100px;
+    color: yellow;
+    animation-name: alarmanim, alarmgrow, alarmupdown;
+    animation-iteration-count: infinite;
+    animation-duration: 250ms, 1s, 2s;
+    animation-direction: alternate;
+}
+@keyframes alarmanim {
+    form{background-color: red; color: yellow;}
+    to{background-color: yellow; color: red;}
+}
+@keyframes alarmgrow {
+    from {font-size: 20px;}
+    to{font-size: 350px;}
+}
+@keyframes alarmupdown {
+    from {transform: translateY(0);}
+    to {transform: translateY(500px);}
 }
 /* Pantalla 1100px*/
 @media only screen and (max-width: 1100px) {
