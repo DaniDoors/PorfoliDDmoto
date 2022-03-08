@@ -1,240 +1,126 @@
 body {
-    background-color: rgb(93, 37, 153);
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    --blaudunkel: rgb(86, 172, 222);
-    --verddunkel: rgb(69, 172, 108);
+  background-color: rgb(93, 37, 153);
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  --blaudunkel: rgb(86, 172, 222);
+  --verddunkel: rgb(69, 172, 108);
 }
-.centratitol{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    height: auto;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    color: silver;
+.centratitol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: auto;
 }
-.blau{
-    color: var(--blaudunkel);
+
+.centerlogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 40%;
+  left: 15vw;
+}
+.logogran {
+  width: 40vw;
+  transition: all 500ms ease;
+}
+.blau {
+  color: var(--blaudunkel);
 }
 .verd {
-    color: var(--verddunkel);
+  color: var(--verddunkel);
 }
-.centerlogo{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;
-    top: 40%;
-    left: 30%;
+
+.iconacontacte {
+  width: 6vw;
 }
 #contactes {
-    width: 220px;
-    height: 50px;
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-}
-.logogran{
-    height: 200px;
-    transition: all 500ms ease;
+  width: 30vw;
+  position: absolute;
+  bottom: 2vh;
+  right: 2vw;
 }
 .logogran:hover {
-    height: 250px;
+  width: 60vw;
 }
-.bigicon{
-    height: 200px;
-    width: 200px;
+.bigicon {
+  width: 15vw;
 }
 #contactesgran {
-    width: 850px;
-    height: 200px;
-    position: absolute;
-    top: 40%;
-    left: 20%;
+  width: 70vw;
+  position: absolute;
+  top: 30vh;
+  left: 15vw;
 }
-#form{
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    left: 5%;
-    bottom: 10%;
+#form {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
 }
-#formulari{
-    display: flex;
-    flex-direction: column;
-    color: darkgray;
+#formulari {
+  display: flex;
+  flex-direction: column;
+  color: darkgray;
 }
-#massapetit{
-    display: none;
+#massapetit {
+  display: none;
 }
-#mimotogrande{
-    position: absolute;
-    top: 20%;
-    left: 10%;
+#mimotogrande {
+  position: absolute;
+  width: 60vw;
+  top: 20vh;
+  left: 20vw;
 }
-#fondoenagas{
-    position: relative;
-    left: -50%;
-    opacity: 20%;
+#fondoenagas {
+  position: relative;
+  left: -50%;
+  opacity: 20%;
 }
-#logosol{
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    height: 600px;
+#logosol {
+  position: absolute;
+  top: 10%;
+  left: 20vw;
+  width: 60vw;
 }
-@keyframes animacio {
-    from{transform: translateX(0); background-color: black; color: yellow}
-    to{transform: translateX(1600px);background-color: yellow; color: black;}
-}
-.quadret {
-    text-align: center;
-    color: black;
-    height: 200px;
-    width: 200px;
-    background-color: black;
-    animation-name: animacio;
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-direction: alternate;
-    animation-play-state: running;
-    transition: all 500ms ease;
-}
-.quadret:hover {
-    background-color: burlywood;
-    animation-play-state: paused;
-}
-.alarm{
-    height: 100%;
-    width: 100%;
-    background-color: red;
-    font-size: 100px;
-    color: yellow;
-    animation-name: alarmanim, alarmgrow, alarmupdown;
-    animation-iteration-count: infinite;
-    animation-duration: 250ms, 1s, 2s;
-    animation-direction: alternate;
-}
-@keyframes alarmanim {
-    form{background-color: red; color: yellow;}
-    to{background-color: yellow; color: red;}
-}
-@keyframes alarmgrow {
-    from {font-size: 20px;}
-    to{font-size: 350px;}
-}
-@keyframes alarmupdown {
-    from {transform: translateY(0);}
-    to {transform: translateY(500px);}
-}
-/* Pantalla 1100px*/
-@media only screen and (max-width: 1100px) {
-    body{
-        background-color: palegoldenrod;
-    }
-    #logogran{
-        height: 150px;
 
-    }
-    .centerlogo{
-        left: 10%;
-    }
-    .bigicon{
-        height: 150px;
-        width: 150px;
-    }
-    #contactesgran{
-        width: 650px;
-        height: 150px;
-        left: 5%;
-    }
-    #mimotogrande{
-        height: 400px;
-        left: 10%;
-    }
-    #logosol{
-        left: 20%;
-        height: 500px;
-    }
-}
-/* Pantalla 700px*/
-@media only screen and (max-width: 700px) {
-    body{
-        background-color: rgb(102, 104, 11);
-    }
-    #logogran{
-        height: 100px;
-    }
-    .centerlogo{
-         left: 10%;
-    }
-    .bigicon{
-        height: 100px;
-        width: 100px;
-    }
-    #contactesgran{
-        width: 450px;
-        height: 100px;
-        left: 20%;
-    }
-    #mimotogrande{
-        height: 300px;
-    }
-    #logosol{
-        height: 400px;
-    }
-}
 /* Pantalla 550px*/
 @media only screen and (max-width: 550px) {
-    body{
-        background-color: brown;
+  .titolimg {
+    height: 60px;
+  }
+
+  .blau,
+  .verd {
+    font-size: 10px;
+  }
+
+  #formimg {
+    display: none;
+  }
+
+  /* Pantalla minúscula*/
+  @media only screen and (max-width: 300px) {
+    body {
+      background-color: red;
+      color: yellow;
+      position: absolute;
+      top: 40%;
     }
-    .titolimg{
-        height: 60px;
+    .centratitol,
+    .centerlogo,
+    #form,
+    #contactes,
+    #contactesgran,
+    #mimotogrande,
+    #logosol {
+      display: none;
     }
-    #logogran{
-        height: 70px;
+    #massapetit {
+      display: block;
     }
-    .blau,.verd{
-        font-size: 10px;
-    }
-    .centerlogo{
-        left: 10%;
-    }
-    #formimg{
-        display: none;
-    }
-    .bigicon{
-        height: 50px;
-        width: 50px;
-    }
-    #contactesgran{
-        width: 250px;
-        height: 50px;
-        left: 15%;
-    }
-    #mimotogrande{
-        height: 200px;
-    }
-    #logosol{
-        height: 200px;
-    }
-}
-/* Pantalla minúscula*/
-@media only screen and (max-width: 300px) {
-    body{
-        background-color: red;
-        color: yellow;
-        position: absolute;
-        top: 40%;
-    }
-    .centratitol, .centerlogo, #form, #contactes, #contactesgran,
-    #mimotogrande, #logosol{
-        display: none;
-    }
-    #massapetit{
-        display: block;
-    }
+  }
 }

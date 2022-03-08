@@ -1,79 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css"/>
-    </head>
-    <main>
-        <body>
-            <div class="centratitol">
-                <div>
-                    <a href="Milogo.html"> 
-                    <img class="titolimg" src="Mi logo.jfif"  height="100">
-                    </a>
-                </div>
-                <div>
-                    <a href="Presentacion.html">
-                    <img class="titolimg" src="daniel puertas dunkel.png" height="100px">
-                    </a>
-                </div>
-                <div>
-                    <a href="Mimoto.html">
-                    <img class="titolimg" src="mimoto.jfif"  height="100">
-                    </a>
-                </div>
-            </div>
-            <a href="Alarm.html"><div class="quadret" id="boom"> Para el quadret, pero <br>NO FACIS CLICK!</div></a>    
-            <div class="centerlogo">
-                <div >
-                    <a href="Services.html">
-                    <img class="logogran" src="logo dunkel archivos.png"  height="200" vertical-align: middle>
-                    </a>
-                </div>
-                <div>
-                    <span class="blau">ENGINYERIA INDUSTRIAL<br></span>
-                    <span class="verd">LABORATORI DE MEDICIÓ<br>DESENVOLUPAMENT DE PROJECTES<br></span></div>
-            </div>
-            <div id="massapetit">
-                Això és massa petit, pero tú que tens un mòbil o un tamagochi?<br>
-                Au! Ves a la botiga a comprar un smartphone en condicions.<br>ADEU ANDREU
-            </div>
-            <div id="contactes">
-                <a href="contacte.html">
-                <img src="mail.png" width="50" height="50">
-                <img src="instagram.png" width="50" height="50">
-                <img src="face.png" width="50" height="50">
-                <img src="linkedin.png" width="50" height="50">
-                </a> 
-            </div>  
-            <div class="fuig" id="form">
-                <img id="formimg" src="formulario.png">
-                <form id="formulari" action="https://formcarry.com/s/VtGXMr1K_Uf" target="_blank" method="POST" accept-charset="UTF-8" >
-                    <label for="email">Your mail</label>
-                    <input type="email" name="email" placeholder="mail@domini.com" required>
-                    <label for="firstName">Your name</label>
-                    <input type="text" name="firstName" placeholder="Paco">
-                    <label for="lastName">Your last name</label>
-                    <input type="text" name="lastName" placeholder="Pil">
-                    <label for="anotherInput">Your comments</label>
-                    <textarea name="textarea" rows="3" cols="40" placeholder="Que quieres?" required></textarea>
-                    <input type="hidden" name="_gotcha">
-                    <br>
-                    <input type="submit" value="enviar">
-                </form>
-            </div>
-        </body>
-        <script>
-            let caput = document.getElementById("boom");
-            let cuenta =document.querySelector("#boom")
-            let finalcontdown = prompt("Un número de l'1 al 10");
-            caput.addEventListener("animationiteration", final, false);
-            function final(event) {
-                finalcontdown = finalcontdown - 1;
-                console.log(finalcontdown);
-                cuenta.textContent = finalcontdown;
-                if (finalcontdown === 0 ) window.open("boom.html","_self");
-            }
-        </script>
-    
-    </main>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <main>
+    <body>
+      <div class="centratitol">
+        <div>
+          <a href="Milogo.html">
+            <img class="titolimg" src="Mi logo.jfif" height="100" />
+          </a>
+        </div>
+        <div>
+          <a href="Presentacion.html">
+            <img
+              class="titolimg"
+              src="daniel puertas dunkel.png"
+              height="100px"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="Mimoto.html">
+            <img class="titolimg" src="mimoto.jfif" height="100" />
+          </a>
+        </div>
+      </div>
+      <!-- <a href="Alarm.html"><div class="quadret" id="boom"> Para el quadret, pero <br>NO FACIS CLICK!</div></a>     -->
+      <div class="centerlogo">
+        <div>
+          <a href="Services.html">
+            <img
+              class="logogran"
+              src="logo dunkel archivos.png"
+              vertical-align:
+              middle
+            />
+          </a>
+        </div>
+        <div>
+          <span class="blau">ENGINYERIA INDUSTRIAL<br /></span>
+          <span class="verd"
+            >LABORATORI DE MEDICIÓ<br />DESENVOLUPAMENT DE PROJECTES<br
+          /></span>
+        </div>
+      </div>
+      <div id="massapetit">
+        Això és massa petit, pero tú que tens un mòbil o un tamagochi?<br />
+        Au! Ves a la botiga a comprar un smartphone en condicions.<br />ADEU
+        ANDREU
+      </div>
+      <div id="contactes">
+        <a href="contacte.html">
+          <img class="iconacontacte" src="mail.png" />
+          <img class="iconacontacte" src="instagram.png" />
+          <img class="iconacontacte" src="face.png" />
+          <img class="iconacontacte" src="linkedin.png" />
+        </a>
+      </div>
+    </body>
+  </main>
 </html>
